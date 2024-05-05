@@ -1,0 +1,77 @@
+GET http://localhost:3001/info
+
+###
+
+GET http://localhost:3001/api/persons
+
+###
+
+GET http://localhost:3001/api/persons/6633f1095b6540d233959e41
+
+###
+
+GET http://localhost:3001/api/persons/15
+
+###
+
+DELETE http://localhost:3001/api/persons/3
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Foo Bar",
+    "number": "123456789"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Arto Hellas",
+    "number": "123456789"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "",
+    "number": "123456789"
+}
+
+###
+
+PUT http://localhost:3001/api/persons/6633f1095b6540d233959e41
+Content-Type: application/json
+
+{
+    "name": "Anna",
+    "number": "123456789"
+}
+
+###
+
+PUT http://localhost:3001/api/persons/663661d1f9c7825c1cfa02b2
+Content-Type: application/json
+
+{
+    "name": "Hi",
+    "number": "1"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "",
+    "number": "123456789"
+}
