@@ -1,0 +1,28 @@
+GET http://localhost:3001/api/blogs
+
+###
+
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+  "title": "How to google",
+  "author": "PJ",
+  "url": "www.google.com",
+  "likes": 4
+}
+
+###
+
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "root",
+    "name": "Superuser",
+    "password": "salainen"
+}
+
+###
+
+GET http://localhost:3001/api/users
